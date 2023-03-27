@@ -1,0 +1,16 @@
+/*function cookmaggi(maggi,water,pan){ console.log("your maggi will be ready
+in"+ maggi * 2+"minuts"+ "and ingredients used are:-"+maggi+"maggi"+water+"cups
+of water"+"using"+pan+"pan") } cookmaggi(4,8,1);*/
+
+<script>
+  let bread1 = prompt("which bread would you like to have");
+  let veggies1 = prompt("what are your favourable veggies");
+  let sauce1 = prompt("which sauce would you like to have");
+  function makesandwitch(bread, veggies, sauce) {
+    let sandwitch =
+      bread + "bread" + veggies + " " + sauce + "sandwitch is ready";
+    return sandwitch;
+  }
+  let vegsandwitch = makesandwitch(bread1, veggies1, sauce1);
+  console.log(vegsandwitch);
+</script>

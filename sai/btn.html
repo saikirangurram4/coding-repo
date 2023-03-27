@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Btn</title>
+  </head>
+  <body>
+    <div class="output">
+      <ul></ul>
+    </div>
+    <script>
+      /*var time = prompt("hey whats the time:");
+      if (time > 5 && time < 12) {
+        alert("good morning");
+      } else if (time > 12 && time < 17) {
+        alert("good afternoon");
+      } else if (time > 18 && time < 21) {
+        alert("good evening");
+      } else {
+        alert("good night");
+      }*/
+
+      /*let bread1 = prompt("which bread would you like to have");
+      let veggies1 = prompt("what are your favourable veggies");
+      let sauce1 = prompt("which sauce would you like to have");
+      function makesandwitch(bread, veggies, sauce) {
+        let sandwitch =
+          bread + "bread" + veggies + " " + sauce + "sandwitch is ready";
+        return sandwitch;
+      }
+      let vegsandwitch = makesandwitch(bread1, veggies1, sauce1);
+      console.log(vegsandwitch);*/
+
+      /*var favshow = "bahubali";
+      console.log(favshow.length);
+      console.log(favshow[4]);
+      console.log(favshow[favshow.length - 5]);
+      console.log(favshow.indexOf("of"));
+      console.log(favshow.slice(4));
+      var srk = "my name is veena";
+      console.log(srk.toUpperCase());
+      console.log(srk.toLowerCase());*/
+
+      const list = document.querySelector("output ul");
+      list.innerHTML = "";
+      let cities = ["mumbai", "delhi", "jaipur", "goa"];
+      for (let i = 0; i < cities.length; i++) {
+        let lowercasecity = cities[i].toLowerCase();
+        let firstAlphabet = lowercasecity.slice(0, 1);
+        lowercasecity = lowercasecity.replace(
+          firstAlphabet,
+          firstAlphabet.toUpperCase()
+        );
+        let listItem = document.createElement("li");
+        listItem.textContent = lowercasecity;
+        list.appendChild(listItem);
+      }
+    </script>
+  </body>
+</html>
